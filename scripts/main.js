@@ -96,16 +96,18 @@ $(document).ready(function () {
 
         }
 
-        return state;
+        return !!state.text ? state.text : states;
     }
 
     $("#_size").select2({
         templateResult: formatState,
         placeholder: 'Выберите размеры',
         allowClear: true,
+        width:"100%",
         minimumResultsForSearch: -1,
+
         templateSelection: formatState
-    });
+    })
 
     $('#block10ContentCards-1').on('click', function (e) {
         e.preventDefault();

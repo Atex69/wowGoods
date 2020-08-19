@@ -1366,6 +1366,7 @@ background-size: contain;
 .choise label{
     align-self: center;
     padding-left: 7px;
+    text-align-last: left;
 }
 
 .good-job p{
