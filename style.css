@@ -1379,3 +1379,31 @@ background-size: contain;
 .good-job option{
     font-size: 16px;
 }
+
+.popups{
+    width: 80px;
+}
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 100%!important;
+    overflow-y: auto;
+}
+.select2-container--default .select2-selection--single {
+    height: 36px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    text-align: -webkit-left!important;
+    padding-left: 17px!important;
+    padding-top: 3px!important;
+    font-size: 15px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    height: 35px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    height: 33px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-right: 0px!important;
+    text-align-last: center;
+    padding-left: 0px!important;
+}

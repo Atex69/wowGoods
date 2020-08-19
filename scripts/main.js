@@ -1,21 +1,111 @@
-
-$('.trigger').parent().on('click', function() {
+$('.trigger').parent().on('click', function () {
     $('.modal-wrapper').toggleClass('open');
     $('.page-wrapper').toggleClass('blur-it');
     return false;
 });
 
-$('.triggerPol').parent().on('click', function() {
+$('.triggerPol').parent().on('click', function () {
     $('.modals-wrap').toggleClass('open');
     $('.page-wrapper').toggleClass('blur-it');
     return false;
 });
 
-$('.modals-wrap').on('click', function (){
+$('.modals-wrap').on('click', function () {
     $('.modal-wrap').removeClass('open');
 });
 
+$('.head').on('click', function () {
+    $('.modal-wrapper').removeClass('open');
+});
+
 $(document).ready(function () {
+
+    function formatState(state) {
+        if (!!state.element && state.element.label === "head") {
+
+            return $(`<span style="display: flex;padding-left: 10px; ">
+                    <div class="popups" style="font-weight: bold">Ru</div>
+                    <div class="popups"  style="font-weight: bold">Euro</div>
+                    <div class="popups"  style="font-weight: bold">Грудь,см</div>
+                </span>`);
+        }
+
+        if (!!state.element) {
+            switch (state.element.value) {
+
+                case "44 S 88":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >44</div>
+                    <div class="popups"   >S</div>
+                    <div class="popups"  >88</div>
+                </span>`
+                    );
+                case "46-48 M 92-96":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >46-48</div>
+                    <div  class="popups" >M</div>
+                    <div class="popups" >92-96</div>
+                </span>`
+                    );
+                case "50 L 100":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >50</div>
+                    <div  class="popups" >L</div>
+                    <div class="popups" >100</div>
+                </span>`
+                    );
+                case "52-54 XL 104-110":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >52-54</div>
+                    <div  class="popups" >XL</div>
+                    <div class="popups" >104-110</div>
+                </span>`
+                    );
+                case "56 2XL 116":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >56</div>
+                    <div  class="popups" >2XL</div>
+                    <div class="popups" >116</div>
+                </span>`
+                    );
+                case "58 3XL 122":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >58</div>
+                    <div  class="popups" >3XL</div>
+                    <div class="popups" >122</div>
+                </span>`
+                    );
+                case "60 4XL 128":
+                    return $(
+                        `<span style="display: flex;" >
+                    <div class="popups"  >60</div>
+                    <div  class="popups" >4XL</div>
+                    <div class="popups" >128</div>
+                </span>`
+                    );
+
+
+            }
+
+
+        }
+
+        return state;
+    }
+
+    $("#_size").select2({
+        templateResult: formatState,
+        placeholder: 'Выберите размеры',
+        allowClear: true,
+        minimumResultsForSearch: -1,
+        templateSelection: formatState
+    });
 
     $('#block10ContentCards-1').on('click', function (e) {
         e.preventDefault();
@@ -43,7 +133,6 @@ $(document).ready(function () {
     });
 
 
-
     let initCardSwitcherDown = function () {
         let contentDown = [`<div class="block10Card1 block10Card">
                         <div class="block10User">
@@ -69,7 +158,7 @@ $(document).ready(function () {
                             </div>
                         </div>
 
-                    </div>`,`
+                    </div>`, `
 
                     <div class="block10Card2 block10Card">
                         <div class="block10User">
@@ -96,7 +185,7 @@ $(document).ready(function () {
                                 </div>
                             </div>
                         </div>
-                    </div>`,`
+                    </div>`, `
                     <div class="block10Card3 block10Card">
                         <div class="block10User">
                             <div class="userAva">
@@ -126,7 +215,7 @@ $(document).ready(function () {
 
         let containerDown = $('.block10Cards');
 
-        let renderDown = (index)=> {
+        let renderDown = (index) => {
             let contentCopy = contentDown.slice();
 
             for (let i = 0; i < index; i++) {
@@ -145,12 +234,9 @@ $(document).ready(function () {
         };
 
 
-
-
-
         let initDown = () => {
             for (let i = 0; i < 4; i++) {
-                $('#block10ContentCards-'+(i+1)).click(() => {
+                $('#block10ContentCards-' + (i + 1)).click(() => {
                     renderDown(i);
                 })
             }
@@ -159,10 +245,6 @@ $(document).ready(function () {
         initDown();
         renderDown(0)
     };
-
-
-
-
 
 
     initCardSwitcherDown();

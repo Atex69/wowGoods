@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -27,19 +28,18 @@
                     <form class="form_modal_window" id="mailForm" action="">
                         <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
                         <input type="phone" id="phone" name="phone" placeholder="Введите ваш телефон" required>
-                        <input name="city" placeholder="Введите ваш размер" list="cities" />
-                        <datalist id="cities" value="Украинская кухня">
-                            <option value="44 S 88" />
-                            <option value="46-48 M 92-96" />
-                            <option value="50 L 100" />
-                            <option value="52-54 XL 104-110" />
-                            <option value="56 2XL 116" />
-                            <option value="58 3XL 122" />
-                            <option value="60 4XL 128" />
-
-
-                        </datalist>
-
+                        <select id="_size" name="size">
+                            <option></option>
+                            <optgroup label="head">
+                            <option value="44 S 88"></option>
+                            <option value="46-48 M 92-96"></option>
+                            <option value="50 L 100"></option>
+                            <option value="52-54 XL 104-110"></option>
+                            <option value="56 2XL 116"></option>
+                            <option value="58 3XL 122"></option>
+                            <option value="60 4XL 128"></option>
+                            </optgroup>
+                        </select>
 
                         <button class="form_sub cardButton" type="button" id="submit">Заказать со скидкой</button>
 
@@ -347,7 +347,7 @@
                                 <div class="cardRemainImg"></div>
                             </div>
                             <div class="cardButton">
-                                <a  href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
+                                <a class="btn trigger" href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
                             </div>
                         </div>
                     </div>
@@ -411,7 +411,7 @@
                                 <div class="cardRemainImg"></div>
                             </div>
                             <div class="cardButton">
-                                <a  href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
+                                <a class="btn trigger" href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
                             </div>
                         </div>
                     </div>
@@ -877,7 +877,7 @@
                                 <div class="cardRemainImg"></div>
                             </div>
                             <div class="cardButton">
-                                <a  href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
+                                <a class="btn trigger" href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
                             </div>
                         </div>
                     </div>
@@ -909,7 +909,7 @@
                                 <div class="cardRemainImg"></div>
                             </div>
                             <div class="cardButton">
-                                <a  href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
+                                <a class="btn trigger" href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
                             </div>
                         </div>
                     </div>
@@ -941,7 +941,7 @@
                                 <div class="cardRemainImg"></div>
                             </div>
                             <div class="cardButton">
-                                <a  href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
+                                <a class="btn trigger" href="#">ЗАКАЗАТЬ ПО АКЦИИ</a>
                             </div>
                         </div>
                     </div>
@@ -953,5 +953,6 @@
 <script src="scripts/jQuery3.3.1.js"></script>
 <script src="scripts/slick.min.js"></script>
 <script src="scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </body>
 </html>
