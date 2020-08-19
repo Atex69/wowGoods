@@ -1,0 +1,423 @@
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+    .block1{
+        height: 100%;
+    }
+    .block3Right{
+        width:100% ;
+    }
+    .block3LeftImg {
+        background-position-x: inherit;
+    background-size: cover;
+        width: 105%;
+        height: 100%;
+    }
+    .block7Wrapper{
+        display: flex;
+    }
+    .block6RightRow3Img{
+        width: 90px;
+    }
+    #block6Mobile{
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .block8Wrapper{
+        display: flex;
+        width: 100%;
+    }
+    .block6ColumnCenter {
+        background: url(img/block6ContentBg.png) no-repeat;
+        width: 100%;
+        height: 790px;
+        background-position-y: -23px;
+        background-size: cover;
+        background-position-x: -16px;
+    }
+    .block7Wrapper{
+        align-items: center;
+    }
+
+    .cardInfo{
+        min-height: 308px;
+    }
+    .block3Left{
+        width: 105%;
+    }
+
+    #block3Mobile{
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: 1fr;
+    }
+#block8Mobile{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr;
+}
+    .block3{
+        display: flex;
+    }
+    .block3Wrapper{
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 900px) {
+    .flexRowHeader{
+        display: none;
+    }
+    .block1{
+        height: 100%;
+        background: #f7d5d2;
+        padding-bottom: 10%;
+    }
+    .block3{
+        height: 100%;
+        background: #f7d5d2;
+    }
+
+    .block3Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .modal{
+        left: 77%;
+        top: 42%;
+    }
+    .blockTittle{
+        font-size: 25px;
+    }
+    .block1Cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .block5Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .block2Wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+    }
+    .block2{
+        display: flex;
+        flex-direction: column;
+    }
+    .block2Left{
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block2Right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blockTittle{
+        display: none;
+    }
+
+    .block2LeftImg,.block2RightImg{
+        background-position-x: 45%;
+    }
+    .block2TittleMobile{
+        display: block;
+        font-size: 25px;
+        text-align: -webkit-center;
+        font-family: 'Book Antiqua', sans-serif;
+    }
+    .block1Tittle{
+        font-size: 30px;
+    }
+    .block1Wrapper{
+        padding-top:20px;
+        padding-bottom: 40px;
+    }
+    .block1TittleMore{
+        margin-bottom: 0px;
+    }
+    .block3LeftImg{
+        height: 266px;
+        background-position-y: -20px;
+    }
+    .block3Tittle{
+        padding-top: 0px;
+    }
+    .block3Right{
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
+
+    .block10{
+        height: 740px;
+    }
+    .block10Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .block10Cards{
+        display: flex;
+        flex-direction: row;
+        width: 317px;
+        overflow: hidden;
+        justify-content: stretch;
+    }
+    .block10Card{
+        align-items: center;
+        padding-right: 17px;
+    }
+    .block10CardsButton{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .block10Tittle{
+        font-weight: bold;
+        font-size: 31px;
+    }
+    .userText{
+        min-height: 215px;
+    }
+    .block4{
+        display: flex;
+        flex-direction: column;
+    }
+    #boldDeks{
+        display: none;
+    }
+    #boldMobile {
+        display: block;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    .block4Content{
+        display: none;
+    }
+    .block4ContentMobile,.block5{
+        display: flex;
+        flex-direction: column;
+    }
+    .block5Tittle{
+        font-size: 30px;
+        margin-top:0px;
+    }
+    .block5ImgLeft{
+        height: 400px;
+    }
+    .block5ImgRight {
+        background: url(img/block5ImgRight.png) no-repeat;
+        width: 91%;
+        height: 361px;
+        background-position-x: center;
+        background-position-y: 41%;
+        background-size: contain;
+    }
+    .block5ItemText{
+        font-size: 20px;
+    }
+    .leftItemImg2{
+        width: 119px;
+    }
+    .leftItemImg3{
+        width: 77px;
+    }
+    .block5ItemText{
+        margin-left: 10px;
+    }
+    .rightItemImg1{
+        width: 87px;
+    }
+    .rightItemImg2{
+        width: 109px;
+    }
+    .rightItemImg3{
+        width: 97px;
+    }
+    .leftItemImg1{
+        width: 96px;
+    }
+    .block6Tittle{
+        font-size: 30px;
+    }
+    .block6Content{
+        display: none;
+    }
+    .block6ContentMobile{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
+    .block6MobileFooter{
+        display: block;
+    }
+    .block6{
+        height: 100%;
+        background: #f7d5d2;
+display: flex;
+        flex-direction: column;
+    }
+    .block6MobileItem{
+        align-items: center;
+        padding-bottom: 15px;
+    }
+    .block8{
+        height: 100%;
+        background: #f7d5d2;
+    }
+    .block6ItemText{
+        padding-left: 15px;
+    }
+    .block6Tittle{
+        margin-top: 11%;
+        margin-bottom: 10%;
+    }
+    .block7Wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-flow:wrap-reverse;
+        padding-bottom: 65px;
+
+    }
+    .block7{
+        display: flex;
+        justify-content: center;
+
+    }
+    .block7Left{
+        background-size: contain;
+        width: 100%;
+        height: 341px;
+        position: relative;
+        background-position-y: 27px;
+    }
+    .block7Content{
+        display: none;
+    }
+    .block7ContentMobile{
+        display: block;
+    }
+.block8Content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.block8Wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.block8Tittle{
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.block8Left{
+    min-height: 233px;
+}
+    .block8RightTextUp{
+        width: 72%;
+    }
+
+.block8Right {
+    font-size: 19px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.block9{
+    display: flex;
+    flex-direction: column;
+}
+.block9Wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.block9Img{
+    background-size: contain;
+    height: 350px;
+}
+.block9Tittle{
+    font-size: 32px;
+    align-self: center;
+}
+    .block3{
+        margin-top: 20px;
+    }
+    .block9Footer{
+        display: none;
+    }
+    .block9FooterMobile{
+        display: block;
+        background: url("img/block9FooterMobile.png")  no-repeat;
+        width: 100%;
+        height: 626px;
+        background-size: contain;
+    }
+    .block11Tittle{
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .block11Wrapper{
+        padding-top: 40px;
+    }
+    .block11About{
+        display: flex;
+        flex-direction: column;
+    }
+    .block11CardPic{
+        display: none;
+    }
+    .block11CardPicMobile{
+        display: block;
+        background: url(img/block11CardPic.png) no-repeat;
+        width: 148px;
+        height: 197px;
+        position: absolute;
+        background-size: contain;
+        left: -37px;
+        bottom: -106px;
+    }
+    .block11Left{
+        position: relative;
+        background-position-x: center;
+        background: url("img/block11LeftMobile.png") no-repeat ;
+        width: 100%;
+        height: 203px;
+        background-position: 50%;
+        background-size: contain;
+        z-index: 10;
+    }
+    .block11CardText{
+        display: none;
+    }
+    .block11CardTextMobile{
+        display: block;
+        padding-left: 32px;
+        padding-top: 32px;
+    }
+    .block11Right{
+        width: 100%;
+    }
+    .block11Footer{
+        flex-direction: column;
+    }
+    .block11FooterText {
+        font-size: 18px;
+    }
+    .block11Footer{
+        padding-top: 0px;
+    }
+    .itemColumn{
+        margin-top: 45px;
+    }
+    .block11FooterItem3{
+        padding-bottom: 40px;
+    }
+}
